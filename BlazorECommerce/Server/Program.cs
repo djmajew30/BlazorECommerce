@@ -12,12 +12,12 @@ builder.Services.AddDbContext<DataContext>(options =>
 builder.Services.AddControllersWithViews();
 builder.Services.AddRazorPages();
 
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddEndpointsApiExplorer(); //manual add for swaggerUI
+builder.Services.AddSwaggerGen();//manual add for swaggerUI
 
 var app = builder.Build();
 
-app.UseSwaggerUI();
+app.UseSwaggerUI();//manual add for swaggerUI
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
@@ -31,7 +31,7 @@ else
     app.UseHsts();
 }
 
-app.UseSwagger();
+app.UseSwagger();//manual add for swaggerUI
 app.UseHttpsRedirection();
 
 app.UseBlazorFrameworkFiles();

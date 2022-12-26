@@ -1,5 +1,5 @@
 ﻿/*Adding Classes*/
-
+/*Image properties*/
 .media-img
 {
     max-height: 200px;
@@ -8,30 +8,35 @@
     margin-bottom: 10px;
     transition: transform .2s;
 }
-
+/*when hovering over image*/
 .media-img:hover
 {
     transform: scale(1.25,1.25);
 }
 
-.media-img-wrapper 
-{
+/*media-img-wrapper is a CSS class used to wrap an image or media element in a containing element. It is used to give a consistent look and feel to media elements throughout a website or application*/
+/*<div class="media-img-wrapper mr-2" >*/
+
+.media-img-wrapper {
     width: 200px;
     text-align: center;
 }
 
-/*To get the image on the side. use .media and .media-body below*/
+/*To get the image on the side. use .media and .media-body below
+<li class="media my-3">*/
 .media
 {
     display:flex;
     align-items:flex-start;
 }
 
+/*<div class="media-body">*/
 .media-body 
 {
     flex:1;
 }
 
+/*<h5 class="price">*/
 .price 
 {
     color:green;
